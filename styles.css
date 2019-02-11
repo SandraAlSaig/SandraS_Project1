@@ -63,7 +63,7 @@ a:hover {
 header {
   text-align: center;
   background: linear-gradient(0deg, #898C8C, transparent 70%),
-              grey url('images/Bgpic.jpg') no-repeat top center ;
+              grey url('Bgpic.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -208,13 +208,13 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(twitter.svg);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(github.svg);
 }
 a.social:hover {
   opacity: 1;
