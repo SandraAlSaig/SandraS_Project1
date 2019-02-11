@@ -1,0 +1,263 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #898C8C;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  text-shadow: 1px 1px 40px white;
+  color: #969394;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+.main-nav {
+  width: 100%;
+  background: #262626;
+  min-height: 20px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  text-shadow: 1px 1px 40px white;
+  border-bottom: 6px groove #6E6B6C;
+}
+.nav {
+  display: flex;
+  font-family: fantasy;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    text-shadow: 1px 1px 40px white;
+    color: #017B92;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(0deg, #898C8C, transparent 70%),
+              grey url('images/Bgpic.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 220px;
+  height: 250px;
+  border-radius: 0%;
+  border: 4px groove #262626;
+  transition: all .5s;
+  overflow: auto;
+}
+header .profile-image:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+.tag {
+  background-color: #11ffee00;
+  font-size: 2.0em;
+  color: black;
+  text-shadow: 1px 10px 15px #013546;
+  font-family: fantasy;
+  border-radius: 0;
+  display: table;
+  margin: 10px auto;
+}
+.location {
+  font-size: 1.0em;
+  background-color: #11ffee00;
+  color: white;
+}
+
+h2{
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 10px 15px #013546;
+  font-family: fantasy;
+  font-size: 1.4em;
+
+
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 600px;
+  text-align: left;
+  transition: all .5s;
+  border-top: 6px groove #6E6B6C;
+  border-left: 6px groove #6E6B6C;
+  border-right: 6px groove #6E6B6C;
+  background: linear-gradient(#474646, #898C8C);
+
+}
+.card:hover {
+  border-color: #00222D;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #4A4647;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #013546;
+}
+
+.contact_header {
+  color: white;
+  text-shadow: 3px 3px 13px black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.contact_me {
+  color: white;
+  font-weight: inherit;
+  text-shadow: 3px 3px 13px black;
+}
+input {
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+  padding: 2px 7px;
+  margin: 10px;
+  overflow: hidden;
+  overflow: auto;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 10px;
+  width: 80px;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 10px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+    color: #013546;
+  }
+
+}
