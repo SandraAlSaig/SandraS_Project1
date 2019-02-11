@@ -147,7 +147,6 @@ div#slider figure {
   margin: 0;
   left: 0;
   animation: 8s slidy infinite;
-  animation-fill-mode: 0;
   animation-iteration-count: infinite;
 }
 
