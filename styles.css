@@ -63,7 +63,7 @@ a:hover {
 header {
   text-align: center;
   background: linear-gradient(0deg, #898C8C, transparent 70%),
-              grey url('Bgpic.jpg') no-repeat top center ;
+              grey url('background_image.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
